@@ -1,14 +1,18 @@
 import { BetaAnalyticsDataClient } from "@google-analytics/data";
 import { NextApiRequest, NextApiResponse } from "next";
-import path from "path";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   const analyticsDataClient = new BetaAnalyticsDataClient({
-    keyFilename: path.join(process.cwd(), "/lib/analytics/analytics.json"),
+    credentials: {
+      client_email: process.env.ANALYTICS_CLIENT_EMAIL,
+      private_key: process.env.ANALYTICS_PRIVATE_KEY.replace(/\\n/g, "\n"),
+    },
+    projectId: process.env.ANALYTICS_PROJECT_ID,
   });
+
   const propertyId = "284928395";
   let today = new Date().getTime() - 60 * 60 * 24 * 60 * 1000;
   let day = new Date(today).getDate();
