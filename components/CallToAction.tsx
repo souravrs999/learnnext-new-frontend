@@ -13,7 +13,7 @@ const CallToAction = () => {
               Subscribe to the Newsletter
             </h2>
             <p className="text-sm text-slate">
-              Subscribe to my Newsletter to get notified of all the new articles
+              Sign up for the Newsletter to get notified of all the new articles
               that will be published by us.
             </p>
           </div>

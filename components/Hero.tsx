@@ -2,7 +2,7 @@ import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="flex mx-auto max-w-6xl h-screen">
+    <section className="flex mx-auto mb-12 max-w-6xl h-screen">
       <div className="flex flex-col mx-10 space-x-0 lg:flex-row lg:space-x-7">
         <div className="flex flex-col justify-center space-y-7 max-w-3xl h-full">
           <p className="font-mono tracking-wide sm:text-lg text-navy-green">

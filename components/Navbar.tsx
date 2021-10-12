@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import Link from "next/link";
+
 const Navbar = () => {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -36,12 +38,14 @@ const Navbar = () => {
         {/* links list */}
         <div className="overflow-hidden relative px-10 pt-0 h-1/2">
           <div className="flex flex-col space-y-4 text-lg text-slate-light">
-            <a href="#" className="flex items-center hover:text-white link">
-              Home
-            </a>
-            <a href="" className="flex items-center hover:text-white link">
-              Blogs
-            </a>
+            <Link href="/">
+              <a href="#" className="flex items-center hover:text-white link">
+                Home
+              </a>
+            </Link>
+            <Link href="/blogs">
+              <a className="flex items-center hover:text-white link">Blogs</a>
+            </Link>
           </div>
         </div>
       </div>
@@ -53,12 +57,14 @@ const Navbar = () => {
             LN
           </div>
           <div className="hidden items-center space-x-10 font-mono text-sm md:flex text-slate-light">
-            <a href="#" className="flex items-center hover:text-white link">
-              Home
-            </a>
-            <a href="" className="flex items-center hover:text-white link">
-              Blogs
-            </a>
+            <Link href="/">
+              <a href="#" className="flex items-center hover:text-white link">
+                Home
+              </a>
+            </Link>
+            <Link href="/blogs">
+              <a className="flex items-center hover:text-white link">Blogs</a>
+            </Link>
           </div>
           <button
             onClick={() => setCollapsed(!collapsed)}

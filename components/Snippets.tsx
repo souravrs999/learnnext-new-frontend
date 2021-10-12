@@ -9,7 +9,7 @@ import {
 const Snippets = () => {
   return (
     <section className="flex mx-auto my-12 max-w-6xl">
-      <div className="flex flex-col mx-10 space-y-12 w-full">
+      <div className="flex flex-col py-5 mx-10 space-y-12 w-full">
         <h2 className="flex items-center space-x-2 text-2xl font-bold text-slate-light">
           <span className="font-mono text-base text-navy-green">02.</span>
           <span className="">Trending Snippets</span>

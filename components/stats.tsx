@@ -9,7 +9,7 @@ const Stats = () => {
   return (
     <section className="flex mx-auto my-12 max-w-6xl">
       <div className="flex flex-col mx-10 space-y-12 w-full">
-        <h2 className="flex items-center space-x-2 text-2xl font-bold text-slate-light">
+        <h2 className="flex items-center py-5 space-x-2 text-2xl font-bold text-slate-light">
           <span className="text-3xl">My Stats</span>
           <span className="w-20 h-[1px] bg-navy-green"></span>
         </h2>
